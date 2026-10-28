@@ -1,4 +1,4 @@
-# ros2_ws
+# rozart_ws
 
 This repository serves as a template for all ROS2 workspaces to be created for the Rice Robotics Club. It features a basic scaffolding for the workspace, including src/ directory and a .gitignore file to block build directories from being uploaded to the repository. It also features a .devcontainer setup that allows running packages in a Docker container that can be spun up by a simple command in VSCode.
 
