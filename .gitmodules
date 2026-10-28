@@ -1,0 +1,3 @@
+[submodule "src/rozart_description"]
+	path = src/rozart_description
+	url = https://github.com/rice-robotics-club/rozart_description.git
