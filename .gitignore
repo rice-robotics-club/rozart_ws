@@ -1,4 +1,4 @@
 .vscode/
-install/
-build/
-log/
+install/**
+build/**
+log/**
