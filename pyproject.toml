@@ -13,3 +13,9 @@ dependencies = [
 
 [tool.uv.sources]
 hand-rl = { git = "https://github.com/rice-robotics-club/hand-rl" }
+
+[dependency-groups]
+dev = [
+    "colcon-common-extensions>=0.3.0",
+    "colcon-mixin>=0.3.2",
+]

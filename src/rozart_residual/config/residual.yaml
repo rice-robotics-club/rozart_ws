@@ -1,0 +1,49 @@
+# Deployment config for residual_node. env and runner use hand-rl's schemas; system replaces
+# the Genesis simulation with the real robot. Joint names and limits are placeholders.
+system:
+  joint_names: [joint_1, joint_2, joint_3]  # Same order as position_controller.joints.
+  default_positions: [0.0, 0.0, 0.0]
+  lower_limits: [-1.0, -1.0, -1.0]
+  upper_limits: [1.0, 1.0, 1.0]
+  command_topic: /position_controller/commands
+  joint_state_topic: /joint_states
+  control_dt: 0.016666666666666666  # Must match the training control_dt.
+  action_scale: 0.5  # Must match the training action_scale.
+  max_step_delta: 0.05
+  reset_duration: 3.0
+
+residual:
+  base_policy: policies/base.pt
+  base_obs_groups: [joint_positions, joint_velocities]
+  residual_policy: null  # Set to a residual export to deploy base + residual.
+  residual_obs_groups: [joint_positions, joint_velocities, base_action]
+  residual_scale: 0.1
+  action_limit: 1.0
+
+# Any env that only reads fields Ros2ControlState provides (joint_positions, joint_velocities,
+# commanded_positions, time, control_dt). hand-rl's RukaEnv and HandPianoEnv expect a floating
+# hand and simulated piano keys, so they will not run here yet.
+env:
+  class_name: rozart_residual.joint_state_env:JointStateEnv
+  max_episode_length: 600
+
+# Only needed for mode:=finetune; same shape as a hand-rl training runner section.
+runner:
+  class_name: OnPolicyRunner
+  obs_groups:
+    actor: [joint_positions, joint_velocities, base_action]
+    critic: [joint_positions, joint_velocities, base_action]
+  num_steps_per_env: 64
+  save_interval: 10
+  run_name: rozart_finetune
+  algorithm:
+    class_name: PPO
+  actor:
+    class_name: MLPModel
+    hidden_dims: [128, 128]
+    distribution_cfg:
+      class_name: GaussianDistribution
+      init_std: 0.3
+  critic:
+    class_name: MLPModel
+    hidden_dims: [128, 128]

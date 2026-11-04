@@ -26,6 +26,15 @@ wheels = [
 ]
 
 [[package]]
+name = "argcomplete"
+version = "3.7.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/87/6f/5a73f04007ca950701765949209f068da628bd11f9c2da287278ce91e0ee/argcomplete-3.7.2.tar.gz", hash = "sha256:aad8b69a0b9969edb62db0d1752354c0d50717b10e0cbb00e2a958381b9fc6b9", size = 74473, upload-time = "2026-08-06T04:53:21.662Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/46/bd/551ee6af426af84ca33e02622be722925c196608e9127d731ef17c47f06e/argcomplete-3.7.2-py3-none-any.whl", hash = "sha256:6029205678bdd9c1c728a155f5f9ecf5812393f969eef58807641a2bc2aa5b19", size = 43294, upload-time = "2026-08-06T04:53:20.246Z" },
+]
+
+[[package]]
 name = "asttokens"
 version = "3.0.2"
 source = { registry = "https://pypi.org/simple" }
@@ -227,12 +236,345 @@ wheels = [
 ]
 
 [[package]]
+name = "colcon-argcomplete"
+version = "0.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "argcomplete", marker = "sys_platform != 'win32'" },
+    { name = "colcon-core", marker = "sys_platform != 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c9/9e/fe7842b0c1c82511f8d9176cfdbd1ba0e19bc24219c84a0510ed816078a6/colcon-argcomplete-0.3.3.tar.gz", hash = "sha256:3e70a32b7d16b816a7c72182bdb20df985ffc01678ec9c67d44659814a61987d", size = 7583, upload-time = "2019-07-16T22:29:08.202Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f1/ef/131788328c9cb5d9882cde4d15dd5aabf2ed6e3d5f09657787c2430812e2/colcon_argcomplete-0.3.3-py3-none-any.whl", hash = "sha256:0358ee95e7d7a7a5929d00bbe5b80138b1dcf7e5f7399ba221437a847c7b62d4", size = 6928, upload-time = "2019-07-16T22:29:06.201Z" },
+]
+
+[[package]]
+name = "colcon-bash"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core", marker = "sys_platform != 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/07/e7/f1b7867c6c64d633e868e5220cc7ece184fed221ca8096cb371af1e7532f/colcon-bash-0.5.0.tar.gz", hash = "sha256:29a223a66828e18aad9b8db5087f7114e388601830091830ca17b095ada2cbac", size = 10909, upload-time = "2023-09-25T20:43:14.594Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6e/f6/d48f6c8602ab80595e715c37172418524e6ef4ca8aa8ab66f01e7bf23fce/colcon_bash-0.5.0-py3-none-any.whl", hash = "sha256:1c13dc3634c1cac1349afaaa4dabbc68d122bdb4d671da5f8c8c62bc05b8390a", size = 11193, upload-time = "2023-09-25T20:43:13.075Z" },
+]
+
+[[package]]
+name = "colcon-cd"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core", marker = "sys_platform != 'win32'" },
+    { name = "colcon-package-information", marker = "sys_platform != 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/63/17/2ae72bad0acf22cc6dc1d0665cd3b8343629cba2e591e78d15d2c65dd9bc/colcon-cd-0.1.1.tar.gz", hash = "sha256:379ef4d9f4bb3557d48ea25230ec5d749e83bb2814319e5a1d5ba5810df7b584", size = 4214, upload-time = "2019-10-21T23:43:47.454Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b1/83/58212820793dba91ac3d123cffae5eb3d51543116e8341ebf0dda87a5d5e/colcon_cd-0.1.1-py3-none-any.whl", hash = "sha256:3ca8f3af5d5e9a956db23797e742cbe5819762f81f731e882aecded8689ecfe6", size = 3560, upload-time = "2019-10-21T23:43:45.5Z" },
+]
+
+[[package]]
+name = "colcon-cmake"
+version = "0.2.30"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "colcon-library-path" },
+    { name = "colcon-test-result" },
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1b/e5/bb8b73033c359ca23e5e85c0bf5f32509f58417e552e9927b79a92f1db7b/colcon_cmake-0.2.30.tar.gz", hash = "sha256:ab0ce0df58f525d1c560b66fd22eb6a62394695a2775166483829debbbb4c84e", size = 25254, upload-time = "2026-06-16T16:57:21.869Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/00/65/71f1b811a60c6f116729c2ae4806c2bc47fa17bb5ac697db39f5439121de/colcon_cmake-0.2.30-py3-none-any.whl", hash = "sha256:2be9af465f64babd588e296f61c777d2c8386f9a82477dd3da7cf5142db6367d", size = 26307, upload-time = "2026-06-16T16:57:20.653Z" },
+]
+
+[[package]]
+name = "colcon-common-extensions"
+version = "0.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-argcomplete", marker = "sys_platform != 'win32'" },
+    { name = "colcon-bash", marker = "sys_platform != 'win32'" },
+    { name = "colcon-cd", marker = "sys_platform != 'win32'" },
+    { name = "colcon-cmake" },
+    { name = "colcon-core" },
+    { name = "colcon-defaults" },
+    { name = "colcon-devtools" },
+    { name = "colcon-library-path" },
+    { name = "colcon-metadata" },
+    { name = "colcon-notification" },
+    { name = "colcon-output" },
+    { name = "colcon-package-information" },
+    { name = "colcon-package-selection" },
+    { name = "colcon-parallel-executor" },
+    { name = "colcon-powershell" },
+    { name = "colcon-python-setup-py" },
+    { name = "colcon-recursive-crawl" },
+    { name = "colcon-ros" },
+    { name = "colcon-test-result" },
+    { name = "colcon-zsh", marker = "sys_platform != 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3c/5b/c4928b0fef2fdf1738b569aab9ed7f8bfa6a19df080b8c864f87552fa577/colcon-common-extensions-0.3.0.tar.gz", hash = "sha256:84408d13f8a46044851a7a4e686749940539d2b3d02e6752746cbbc9a89049ff", size = 1966, upload-time = "2022-08-31T16:00:39.191Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/82/a4/04d5840a3ca8e13fc95dc710f9b8c97b379573505291ba42ffa92c94e959/colcon_common_extensions-0.3.0-py3-none-any.whl", hash = "sha256:a2acb90de17c82dc7e4ebd3c04d73833d7c12670c3db71b50db8fcd84d560694", size = 6472, upload-time = "2022-08-31T16:00:22.2Z" },
+]
+
+[[package]]
+name = "colcon-core"
+version = "0.21.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "coloredlogs", marker = "sys_platform == 'win32'" },
+    { name = "distlib" },
+    { name = "empy" },
+    { name = "packaging" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "pytest-repeat" },
+    { name = "pytest-rerunfailures" },
+    { name = "setuptools" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a6/17/c81f873e0c46591753a81287017b97fecacef7d76d7a9f3073bde4be87fc/colcon_core-0.21.3.tar.gz", hash = "sha256:0e781b3f5d82fbd974e2ed61e40d37b711e2f94fac18971d6944cf7308ecb8d0", size = 150627, upload-time = "2026-09-17T16:53:57.806Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/ab/f52f1c8410518f4419ed7bb06550c9bb26acf1928848ae23136c0dbd51e5/colcon_core-0.21.3-py3-none-any.whl", hash = "sha256:033b06d77f972ce043efcbd7058a8020892d671e5b862dbb2cebe866a03e8ae7", size = 153881, upload-time = "2026-09-17T16:53:56.657Z" },
+]
+
+[[package]]
+name = "colcon-defaults"
+version = "0.2.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ff/9c/7b31ca07cf765f92808c7d0b8af42f40bc7268ab9f7b3b00a02ce91b8aa9/colcon-defaults-0.2.9.tar.gz", hash = "sha256:b0f3cc900626906a46ae9ee5341f78b237908df9572a10e57d0f041d946b88e3", size = 10640, upload-time = "2024-12-18T22:23:35.66Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9b/8b/19dfa6fee7d5bb4d1894e27adb4811ef6c9c983a25afcf261fc04b43f6c1/colcon_defaults-0.2.9-py3-none-any.whl", hash = "sha256:801ab5f6ff845a986425a9bad7e2131cf0b90523cc7ce276eaeea1b49d51efaa", size = 9983, upload-time = "2024-12-18T22:23:34.654Z" },
+]
+
+[[package]]
+name = "colcon-devtools"
+version = "0.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c7/ca/35e914cc8d356f70c24662e5ba77dfa1e4151d6c7f16cb6f0dbd3d0536cd/colcon-devtools-0.3.0.tar.gz", hash = "sha256:34ae3877f60ce04f50acbf11ceadb660e6eaebde837e6d8b035ab9fb8ca36e05", size = 9753, upload-time = "2024-03-13T19:13:27.552Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/61/5e/564a69cb701bf2d8ef3d4ee9971f901d021f7f283f28f8d0e4d17af4c94d/colcon_devtools-0.3.0-py3-none-any.whl", hash = "sha256:25528e32cdcaed5ede43c99fd502d7d970ab22c5ebc9b45613f95bd855c18585", size = 10368, upload-time = "2024-03-13T19:13:25.789Z" },
+]
+
+[[package]]
+name = "colcon-library-path"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7a/72/1427af79ac1265103b58ff6fbacd75d325f590ec0e3c1c98027ebd1fff12/colcon-library-path-0.2.1.tar.gz", hash = "sha256:8288fc911aab5682771b45fff6437adefefbd30adf38acd2adffeccf4a24e9e2", size = 3789, upload-time = "2019-01-16T18:34:02.391Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b8/02/4e4dd0cb94491774e87cf479066a8b6ef1f653889a0c9fb957f527c165f7/colcon_library_path-0.2.1-py3-none-any.whl", hash = "sha256:e8dd2f87bf2a8776b4770004dd744d16858cb6338eb170fe934066236f4eab21", size = 4932, upload-time = "2019-01-16T18:34:00.738Z" },
+]
+
+[[package]]
+name = "colcon-metadata"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f7/e7/2f3bc57dbde498410476d843de11fc3d645d28ae90807d5f4d3248eb729c/colcon_metadata-0.3.1.tar.gz", hash = "sha256:67cc773182c0958f09835b9d30f4851860ede89766d57d01f17821b4596fd555", size = 15437, upload-time = "2026-09-13T03:11:04.134Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/98/f8/d2ba851cedc174c0fe621c0fc26af0e3f1094d0ee2c9ff9d2f7875800798/colcon_metadata-0.3.1-py3-none-any.whl", hash = "sha256:3b4f474ba56e17bb1848165b9bfa518c98f0d6379b325c899f33b46a78d0f609", size = 19738, upload-time = "2026-09-13T03:11:03.218Z" },
+]
+
+[[package]]
+name = "colcon-mixin"
+version = "0.3.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/92/03/add57070a2d3c35c0c5489a94084904d85674d07b05d857645ee9f02a452/colcon_mixin-0.3.2.tar.gz", hash = "sha256:e9304732d6cfa27cebb41ae03e3a241eca25d25caa6858275edc1ed838e49997", size = 20570, upload-time = "2026-09-13T03:10:22.827Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/92/1b/a39571d3feb3647944fb04ecae0f2cfa44411e075a99b5ed365ef5cd78e9/colcon_mixin-0.3.2-py3-none-any.whl", hash = "sha256:135a2fca591c41c7eee12f8cd1edb115e20b81bf545869345da43c92e0ec0dfd", size = 22433, upload-time = "2026-09-13T03:10:21.687Z" },
+]
+
+[[package]]
+name = "colcon-notification"
+version = "0.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "notify2", marker = "sys_platform == 'linux'" },
+    { name = "pywin32", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1c/29/c320df299b15020fd9be791cb61b2b43802f4075219183766bb78b04b98c/colcon_notification-0.3.3.tar.gz", hash = "sha256:a97cf4f9cf9ad60a78c3576ea633e50f7c9caae1d4aef57e55bdbb40d21151e0", size = 60891, upload-time = "2026-09-17T17:18:39.9Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8e/85/b268abde9b36656211d3ed10745d352d0e8dd492ff552b66847856a97fff/colcon_notification-0.3.3-py3-none-any.whl", hash = "sha256:c3cffd9f8bbd4e673307fb3d4d06d624d0d9023bad1c12c3fea2dd3f9b641ad9", size = 63618, upload-time = "2026-09-17T17:18:38.539Z" },
+]
+
+[[package]]
+name = "colcon-output"
+version = "0.2.15"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/25/0e/1261291e6610aa13ec39f3d5363ae1fc084cf4281eb05cbc5d920241be9c/colcon_output-0.2.15.tar.gz", hash = "sha256:db72d0353938c4e85866d9515be08149a2dd216705528b98d092a645b2abac1a", size = 13605, upload-time = "2026-09-17T17:14:03.839Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e5/0c/95b6551e797111e481994e04bcc77d225753f9ea6d2ffaa2c96fa9e6bcd8/colcon_output-0.2.15-py3-none-any.whl", hash = "sha256:89649cd67f5c7991145730a70bee703d63b7883ff903831502023e9ccda3cce0", size = 14660, upload-time = "2026-09-17T17:14:02.813Z" },
+]
+
+[[package]]
+name = "colcon-package-information"
+version = "0.4.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "packaging" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b2/0a/ff5ab1d9822239dd41fe53111316fb61d0dc79532bcc3f908a6604b58e74/colcon_package_information-0.4.1.tar.gz", hash = "sha256:4e0143cc0288280b5fd75ada7c75f697857d694ff48a68da6fcc178b6ffb2726", size = 15259, upload-time = "2026-03-27T22:08:07.37Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1e/ee/a6b0ffdc06c67f3ab740c3bf8efaf520c7adb3b4bf189b447e90101ff838/colcon_package_information-0.4.1-py3-none-any.whl", hash = "sha256:951c5e596cd0cf5cc82965fd23f2d8c1be78f7ac0cc409a2ee552e4ef0f374d3", size = 15601, upload-time = "2026-03-27T22:08:06.418Z" },
+]
+
+[[package]]
+name = "colcon-package-selection"
+version = "0.2.10"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4e/bc/e06133c56ed4099b388949228e80194e460f156c4772e7b058f7ebf04e9e/colcon-package-selection-0.2.10.tar.gz", hash = "sha256:494493d836c7ac69ce6d5e9f69a6efca6619da8e691e5a4138c975e6f31103db", size = 8995, upload-time = "2020-10-06T16:01:22.998Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6f/58/fb91adaab07ed20865839acd45a6f88a030751c19688e4781d556d34a1b5/colcon_package_selection-0.2.10-py3-none-any.whl", hash = "sha256:a918f1997121e6b3410cf7944844624ce8a7abff676788a8b9128629e012989e", size = 16456, upload-time = "2020-10-06T16:01:21.143Z" },
+]
+
+[[package]]
+name = "colcon-parallel-executor"
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/72/0a/de44d2c038540df26aaf4db1f418df78b828ebfd1f4ee21af3db731b4524/colcon-parallel-executor-0.4.0.tar.gz", hash = "sha256:53094be24010a3bbc2503dc2939e38b5c9bfa0f2977c589693777a0933ec445d", size = 12696, upload-time = "2025-08-13T15:59:53.817Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c7/4b/60377305e7671736df4abd9130089a9d4726ee768677a35ce76b6ed44fb4/colcon_parallel_executor-0.4.0-py3-none-any.whl", hash = "sha256:d3fe7ba1c8db2fb27d6be077605be6520a711940cc1601a45239ee941987a9e9", size = 11670, upload-time = "2025-08-13T15:59:52.995Z" },
+]
+
+[[package]]
+name = "colcon-pkg-config"
+version = "0.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7c/3f/9979f90a2dc5fe5da4341fab6c3035aaf885f2bf7177fc9de1ea36f3eacb/colcon-pkg-config-0.1.0.tar.gz", hash = "sha256:81fc46d037159030ba7b23970c573a31cead315f3c2410101a3cec858ec6bfa3", size = 3411, upload-time = "2018-06-28T19:51:40.688Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/75/28/d738200c7eed21cd78df901fa78818618f5b85dd39ea7c3905b367fcb033/colcon_pkg_config-0.1.0-py3-none-any.whl", hash = "sha256:3a79aa429dc8cfc534b35a80fe04483b9fd730b436cfd5b093aed2934c804206", size = 4506, upload-time = "2018-06-28T19:51:39.205Z" },
+]
+
+[[package]]
+name = "colcon-powershell"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/95/16/fe2bd542f93b12b59bffad250d614210f1f9f086e96f5778dd789796694c/colcon_powershell-0.5.0.tar.gz", hash = "sha256:54ce6e5f6e6ebf51ff54e2857257d0ff5a16b528de9f2796a01ca212b5086d77", size = 12577, upload-time = "2026-02-10T21:38:33.144Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/3e/85/2c191f8682f4b4ad2f7cc6374fca8b5bab6c75495991fa2baca08f7ae6df/colcon_powershell-0.5.0-py3-none-any.whl", hash = "sha256:1382fba58c451d79ac42d1a429762406f4c3f695a53a2d0254570c93406e0793", size = 13425, upload-time = "2026-02-10T21:33:50.301Z" },
+]
+
+[[package]]
+name = "colcon-python-setup-py"
+version = "0.2.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+    { name = "setuptools" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/32/86/e0e84172387635901a753c167a7fc152e3d066a9647ba10df11616830ef4/colcon-python-setup-py-0.2.9.tar.gz", hash = "sha256:4d8bab2e05ba334e29eee3715fbde490281342ed8e000e252130e5c51915383a", size = 12654, upload-time = "2024-10-08T23:03:30.809Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9a/74/df3a38ab9c2f9f12bac04eed4dbdeedf29d04c3537d23cd83aa3e85973bd/colcon_python_setup_py-0.2.9-py3-none-any.whl", hash = "sha256:6ba76adb954cb963ada852dd01fa33890ba71638c48cdb43404acb0b52e98163", size = 11847, upload-time = "2024-10-08T23:03:29.161Z" },
+]
+
+[[package]]
+name = "colcon-recursive-crawl"
+version = "0.2.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ae/68/fa5cdc569c826b4dee0c5b08401f40c4b27b4f830135122beac6871a28dc/colcon-recursive-crawl-0.2.3.tar.gz", hash = "sha256:fca5f619214d20306daaf012f91399d4d3b605364b121e5df80399432c55c603", size = 8726, upload-time = "2023-10-05T16:33:31.685Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/89/1c/04c4382add856e6109cc9a2beca3f40aeceabce4d09cf832ea1bac97c3d9/colcon_recursive_crawl-0.2.3-py3-none-any.whl", hash = "sha256:67b5f35d702728c0b638bfa581ca54699871dea7817f4415a29b782ee5b5e135", size = 8270, upload-time = "2023-10-05T16:33:30.594Z" },
+]
+
+[[package]]
+name = "colcon-ros"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "catkin-pkg" },
+    { name = "colcon-cmake" },
+    { name = "colcon-core" },
+    { name = "colcon-pkg-config" },
+    { name = "colcon-python-setup-py" },
+    { name = "colcon-recursive-crawl" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2e/96/b1d56219d3f3e5d128c11ecb197f7d74529dc3c609d928912b3f69f2bfd4/colcon-ros-0.5.0.tar.gz", hash = "sha256:79a7e89f6fa636f7e4fd44a88b7860fb1da99d51f0ba7bcf0b9b624a1a578365", size = 20852, upload-time = "2024-06-24T21:46:07.99Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d5/d9/94442ea35bf6caf2f43c56372b450e36a3d6516c025babf2fda89ff6c126/colcon_ros-0.5.0-py3-none-any.whl", hash = "sha256:21720baf112fdf3e1e96951bbf2aec0dc5b09afb884dc6cc50a2b419840749dd", size = 28332, upload-time = "2024-06-24T21:46:06.053Z" },
+]
+
+[[package]]
+name = "colcon-test-result"
+version = "0.3.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/7c/e5/690583c1bbb2c9958287e64a59014e69766644d900c4c10f4ed855bbc2d6/colcon-test-result-0.3.8.tar.gz", hash = "sha256:aa5225716a5bdd9f1df721e7a04f1e02150def8c86dd070793cb62e747c36ed3", size = 8077, upload-time = "2019-10-01T18:34:27.142Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b6/62/a3e327473df5557fc0a2f2d3bc6327b56cbf3df4a2626ab6f58b1da9dcec/colcon_test_result-0.3.8-py3-none-any.whl", hash = "sha256:0c54f701ffd4593c515b9bf2db16adf5c26526ed81ab6b4e4e9d867ed690e782", size = 8500, upload-time = "2019-10-01T18:34:24.837Z" },
+]
+
+[[package]]
+name = "colcon-zsh"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colcon-core", marker = "sys_platform != 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e5/0a/e8495379bd5f555a27e42eed6317ff6f367732c191d7030ff63bf5601392/colcon-zsh-0.5.0.tar.gz", hash = "sha256:efff75c43ddab2649853529e41cee36e0f83b6d4c864c0736353d0dece78334a", size = 10766, upload-time = "2023-10-06T17:49:59.289Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/56/15/77a9f6d9745713ef117920268ec5e32dfcf16e9ba373a2299c0952d91e71/colcon_zsh-0.5.0-py3-none-any.whl", hash = "sha256:a7697630d6763f4a9599d87e42ce9e7cf541873b8f40b0d77ed1eaf9510fd55a", size = 10968, upload-time = "2023-10-06T17:49:58.235Z" },
+]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d8/53/6f443c9a4a8358a93a6792e2acffb9d9d5cb0a5cfd8802644b7b1c9a02e4/colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44", size = 27697, upload-time = "2022-10-25T02:36:22.414Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d1/d6/3965ed04c63042e047cb6a3e6ed1a63a35087b6a609aa3a15ed8ac56c221/colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6", size = 25335, upload-time = "2022-10-25T02:36:20.889Z" },
+]
+
+[[package]]
+name = "coloredlogs"
+version = "15.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "humanfriendly", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cc/c7/eed8f27100517e8c0e6b923d5f0845d0cb99763da6fdee00478f91db7325/coloredlogs-15.0.1.tar.gz", hash = "sha256:7c991aa71a4577af2f82600d8f8f3a89f936baeaf9b50a9c197da014e5bf16b0", size = 278520, upload-time = "2021-06-11T10:22:45.202Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a7/06/3d6badcf13db419e25b07041d9c7b4a2c331d3f4e7134445ec5df57714cd/coloredlogs-15.0.1-py2.py3-none-any.whl", hash = "sha256:612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934", size = 46018, upload-time = "2021-06-11T10:22:42.561Z" },
 ]
 
 [[package]]
@@ -254,6 +596,30 @@ wheels = [
 ]
 
 [[package]]
+name = "coverage"
+version = "7.17.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/02/9b/639ff6f5b3158999fab6f03cb7597526ad57e15cad0c6cfa9b64bac874dc/coverage-7.17.1.tar.gz", hash = "sha256:5c5c77f95a0e83e6b79eff948d251c9911cfd61d67f5059159fc25b7bc4aec27", size = 995565, upload-time = "2026-11-03T12:38:47.608Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/64/37/0e501535cfd4c71555ac26fc951cd926d6200f20ba5146cb34de429f5e36/coverage-7.17.1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:7ae17b0127df7298fffec6866d45969620ca70267cf8961c5102a872abfd0198", size = 227626, upload-time = "2026-11-03T12:36:26.151Z" },
+    { url = "https://files.pythonhosted.org/packages/84/f8/619e48ba82da0ff2fea7e377e427d5a1d4e918dd90613240145576aa76c9/coverage-7.17.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:b8a8f0b1d662828e7cfd52ba6d4e8d79496d4711057c33daaf29f50414d5f8c6", size = 227859, upload-time = "2026-11-03T12:36:27.659Z" },
+    { url = "https://files.pythonhosted.org/packages/45/9c/93a83fdb0120538192d38b0fe77deb6036eae357a803a1e62b9bb7d1cf57/coverage-7.17.1-cp312-cp312-manylinux1_i686.manylinux_2_28_i686.manylinux_2_5_i686.whl", hash = "sha256:710a02c4a2f7de5f08c2ecd26fced31099032b8c3fcf2f602e4cef5190008baf", size = 260153, upload-time = "2026-11-03T12:36:29.012Z" },
+    { url = "https://files.pythonhosted.org/packages/35/be/2704ac4e51ef9075255314cf547e44f43cd4bde96c9efb7da826ce39ce57/coverage-7.17.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:622f0d4869db8fdfa3a7ee2c6b0207b17abe59b462617599c8c3def27f482d78", size = 263480, upload-time = "2026-11-03T12:36:30.308Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/83/64edd51a572196239890825cdfefce0c38f634de439d3d840bbe33e09271/coverage-7.17.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:6d8ba77c22882009f4f6599ccc88a9170b9c6e69f4464c2ef235e9ca24b62f68", size = 264016, upload-time = "2026-11-03T12:36:31.667Z" },
+    { url = "https://files.pythonhosted.org/packages/71/95/c9998e7e718e86f85142a0cbf517d100ba2bb4c068f814245f96a253772c/coverage-7.17.1-cp312-cp312-manylinux2014_ppc64le.manylinux_2_17_ppc64le.manylinux_2_28_ppc64le.whl", hash = "sha256:8ff5288d8b03519e05697cc7065e75c55a10ce4d7581108978b549516c7edaab", size = 266294, upload-time = "2026-11-03T12:36:33.03Z" },
+    { url = "https://files.pythonhosted.org/packages/46/b0/73c6276d5c75239b725207e60b19ed23a4d8c564a92232890d7ba9e70bef/coverage-7.17.1-cp312-cp312-manylinux_2_31_riscv64.manylinux_2_39_riscv64.whl", hash = "sha256:6c461a379dbacd1b92c3800f529025e3b85a41a90b97e49d3b004ec690a13847", size = 260386, upload-time = "2026-11-03T12:36:34.463Z" },
+    { url = "https://files.pythonhosted.org/packages/3b/57/9374f6513341d07c1a02bdbd37ee7e98fbc8d963da9e71dc4b580ef86994/coverage-7.17.1-cp312-cp312-musllinux_1_2_aarch64.whl", hash = "sha256:bf29880edc2dbe589f3bc9fc7ea9a4c81cdce118a69feb52bf4dc420b475ed9b", size = 261901, upload-time = "2026-11-03T12:36:36.001Z" },
+    { url = "https://files.pythonhosted.org/packages/ea/ca/50a4fab6983deb19d0ef8941c64e69e09d9428523c16e38262a0a28d379e/coverage-7.17.1-cp312-cp312-musllinux_1_2_i686.whl", hash = "sha256:d416449f86fa1af6a9c1031fbd27ad7c1d30f57945bb52cd28250266c46ae549", size = 260066, upload-time = "2026-11-03T12:36:37.426Z" },
+    { url = "https://files.pythonhosted.org/packages/66/db/4c5e12596e68084a59a108712f2a89e5cedf30fc3f2fd8b2b38e62d300a5/coverage-7.17.1-cp312-cp312-musllinux_1_2_ppc64le.whl", hash = "sha256:a7858779514aa04242f7fd7b4a92dd395d08fe791ba33624187d6c68f96245c6", size = 264114, upload-time = "2026-11-03T12:36:38.937Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/9b/2c8bc32551e15080c894d7f7d8c13589c91980923a11a96b51ca7c538eee/coverage-7.17.1-cp312-cp312-musllinux_1_2_riscv64.whl", hash = "sha256:b367f16bf32939fafa8f26669fdb59ab21ee601527ad716aab7cd178ed3bd28f", size = 259566, upload-time = "2026-11-03T12:36:40.514Z" },
+    { url = "https://files.pythonhosted.org/packages/f3/54/9cbf5e95496e2f8d8684eea3e7f1f4911375d01c73ccb51b067385c0d77c/coverage-7.17.1-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:a20b2945e275fe76ed2ed6be6103aa4d8e923b8f2678f1f3dc31c6ec8849c8a1", size = 262053, upload-time = "2026-11-03T12:36:41.975Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/3e/ef5728364207026031aac8f068e68f15bf71c1a84046efbca4623617cd2a/coverage-7.17.1-cp312-cp312-win32.whl", hash = "sha256:6c89aa3497bd593e1bfd9f57ebdecc5544387b5e94e6d4c6cb7597565eb551e6", size = 229457, upload-time = "2026-11-03T12:36:43.227Z" },
+    { url = "https://files.pythonhosted.org/packages/e9/a9/8830de67aa3b16f94e6cc456dde07db95d0ea8001cf8224340cdb6d47cb4/coverage-7.17.1-cp312-cp312-win_amd64.whl", hash = "sha256:6e6c9759a42cf946ca427dbbd772305516401ff6d280b93cc52e7b11fcedfb2a", size = 230037, upload-time = "2026-11-03T12:36:44.547Z" },
+    { url = "https://files.pythonhosted.org/packages/6b/00/a932037e8a27705d8f1aded46edf879d8f2592392dcd025349fa72d9b5a8/coverage-7.17.1-cp312-cp312-win_arm64.whl", hash = "sha256:1c06c40a9fb03ab43ace3ee27a11e61ebf233161fb9ebabfb2b51f78cf1602e0", size = 229843, upload-time = "2026-11-03T12:36:45.821Z" },
+    { url = "https://files.pythonhosted.org/packages/18/61/7ad3e5f92557c73044d3dfaf88cc65fb7b1ad589c744e8629af8e6370224/coverage-7.17.1-py3-none-any.whl", hash = "sha256:fda1023828e4a9f4a40ef06783e005f3630f805f839edc679c87f597f33e041f", size = 219074, upload-time = "2026-11-03T12:38:46.229Z" },
+]
+
+[[package]]
 name = "cowsay"
 version = "6.1"
 source = { registry = "https://pypi.org/simple" }
@@ -266,7 +632,7 @@ name = "cuda-bindings"
 version = "13.4.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cuda-pathfinder" },
+    { name = "cuda-pathfinder", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/38/87909f62598d02d9e5c536326aed1755f6bfa190285507b962bb601e0005/cuda_bindings-13.4.4-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:b346bfe1dda49537537c06cc4727b2210d949d8aee883cb591bca46581629d00", size = 6488222, upload-time = "2026-10-14T12:35:20.703Z" },
@@ -291,40 +657,40 @@ wheels = [
 
 [package.optional-dependencies]
 cublas = [
-    { name = "nvidia-cublas", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
-    { name = "nvidia-cuda-nvrtc", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-cublas", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
+    { name = "nvidia-cuda-nvrtc", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 cudart = [
-    { name = "nvidia-cuda-runtime", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-cuda-runtime", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 cufft = [
-    { name = "nvidia-cufft", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
-    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-cufft", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
+    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 cufile = [
     { name = "nvidia-cufile", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 cupti = [
-    { name = "nvidia-cuda-cupti", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-cuda-cupti", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 cusolver = [
-    { name = "nvidia-cublas", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
-    { name = "nvidia-cusolver", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
-    { name = "nvidia-cusparse", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
-    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-cublas", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
+    { name = "nvidia-cusolver", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
+    { name = "nvidia-cusparse", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
+    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 cusparse = [
-    { name = "nvidia-cusparse", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
-    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-cusparse", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
+    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 nvjitlink = [
-    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-nvjitlink", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 nvrtc = [
-    { name = "nvidia-cuda-nvrtc", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-cuda-nvrtc", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 nvtx = [
-    { name = "nvidia-nvtx", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
+    { name = "nvidia-nvtx", marker = "(platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')" },
 ]
 
 [[package]]
@@ -391,6 +757,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/81/e1/56027a71e31b02ddc53c7d65b01e68edf64dea2932122fe7746a516f75d5/dill-0.4.1.tar.gz", hash = "sha256:423092df4182177d4d8ba8290c8a5b640c66ab35ec7da59ccfa00f6fa3eea5fa", size = 187315, upload-time = "2026-01-19T02:36:56.85Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1e/77/dc8c558f7593132cf8fefec57c4f60c83b16941c574ac5f619abb3ae7933/dill-0.4.1-py3-none-any.whl", hash = "sha256:1e1ce33e978ae97fcfcff5638477032b801c46c7c65cf717f95fbc2248f79a9d", size = 120019, upload-time = "2026-01-19T02:36:55.663Z" },
+]
+
+[[package]]
+name = "distlib"
+version = "0.4.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/68/bc/d36966de7304047a1001a7559fbf266c464bb5d8cc85464536ef8c9bcc32/distlib-0.4.4.tar.gz", hash = "sha256:ca4175b4ac7f71223cc30ed7248c45d2b38c2439d8ee6e498ab67ed63cf3508d", size = 621304, upload-time = "2026-10-16T13:56:34.203Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/2b/238f02a4927fa2e27aa995371d240a468b52e42eae44a678434aff736b38/distlib-0.4.4-py2.py3-none-any.whl", hash = "sha256:cf09d55b1e85a89576b036aeb71550bfd68320f3f21761ca329eadadad918638", size = 472099, upload-time = "2026-10-16T13:56:32.053Z" },
 ]
 
 [[package]]
@@ -720,8 +1095,8 @@ name = "gs-madrona"
 version = "0.0.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-cuda-nvrtc-cu12" },
-    { name = "nvidia-nvjitlink-cu12" },
+    { name = "nvidia-cuda-nvrtc-cu12", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "nvidia-nvjitlink-cu12", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/06/e3/b8daad98c6f859aefd38f0ac85fb778b8ecacf84d976b4de64198c953f7f/gs_madrona-0.0.10-cp312-abi3-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:8a183a99d980ab3fff676c9d71ba61c2255b96ed301f579c40b7504e6c1c973b", size = 37599063, upload-time = "2026-07-23T15:58:26.103Z" },
@@ -750,6 +1125,18 @@ dependencies = [
     { name = "tensordict" },
     { name = "torch" },
     { name = "torchvision" },
+]
+
+[[package]]
+name = "humanfriendly"
+version = "10.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyreadline3", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/cc/3f/2c29224acb2e2df4d2046e4c73ee2662023c58ff5b113c4c1adac0886c43/humanfriendly-10.0.tar.gz", hash = "sha256:6b0b831ce8f15f7300721aa49829fc4e83921a9a301cc7f606be6686a2288ddc", size = 360702, upload-time = "2021-09-17T21:40:43.31Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f0/0f/310fb31e39e2d734ccaa2c0fb981ee41f7bd5056ce9bc29b2248bd569169/humanfriendly-10.0-py2.py3-none-any.whl", hash = "sha256:1697e1a8a8f550fd43c2865cd84542fc175a61dcb779b6fee18cf6b6ccba1477", size = 86794, upload-time = "2021-09-17T21:40:39.897Z" },
 ]
 
 [[package]]
@@ -823,6 +1210,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/e4/06/b56dfa750b44e86157093bc8fca0ab81dccbf5260510de4eaf1cb69b5b99/importlib_resources-7.1.0.tar.gz", hash = "sha256:0722d4c6212489c530f2a145a34c0a7a3b4721bc96a15fada5930e2a0b760708", size = 44985, upload-time = "2026-04-12T16:36:09.232Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8a/db/55a262f3606bebcae07cc14095338471ad7c0bbcaa37707e6f0ee49725b7/importlib_resources-7.1.0-py3-none-any.whl", hash = "sha256:1bd7b48b4088eddb2cd16382150bb515af0bd2c70128194392725f82ad2c96a1", size = 37232, upload-time = "2026-04-12T16:36:08.219Z" },
+]
+
+[[package]]
+name = "iniconfig"
+version = "2.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/e1/2069291243c926a2ff1cd706c7f3eeb9b62144bf60f77c9fb9ff2fb26bd3/iniconfig-2.3.1.tar.gz", hash = "sha256:67f4b9c50da0dedf52af349e7749a80a9057a5031199791b906c3bb3ae878960", size = 21209, upload-time = "2026-10-06T22:48:38.076Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/56/43/4ca9e49d27a1fcf6bece6f6aec0ea46bb9112489b93d4b688fb415457bdb/iniconfig-2.3.1-py3-none-any.whl", hash = "sha256:9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7", size = 7552, upload-time = "2026-10-06T22:48:36.959Z" },
 ]
 
 [[package]]
@@ -1401,6 +1797,15 @@ wheels = [
 ]
 
 [[package]]
+name = "notify2"
+version = "0.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/aa/e8/d4b335aa739dc299a77766ecc5f1972d1de1993524aa94acef3219bba315/notify2-0.3.1.tar.gz", hash = "sha256:33fa108d50c42f3cd3407cc437518ad3f6225d1bb237011f16393c9dd3ce197d", size = 17792, upload-time = "2017-04-28T14:03:44.487Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f9/69/99d2bc2d98a802b6f58d1e0a774a933b3fea5ef11455379561b71c04370b/notify2-0.3.1-py2.py3-none-any.whl", hash = "sha256:d7e27e63c2120c074225e526754101e22f029e38e5f002b1ceaa965258bf1073", size = 8033, upload-time = "2017-04-28T14:03:42.934Z" },
+]
+
+[[package]]
 name = "numba"
 version = "0.68.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1441,7 +1846,7 @@ name = "nvidia-cublas"
 version = "13.4.1.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-cuda-nvrtc" },
+    { name = "nvidia-cuda-nvrtc", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d0/a0/5cd9d4b08a8320f7ca150ee0d66c97e98092922e338336cb4b62da7500c3/nvidia_cublas-13.4.1.3-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:4eb1472bf92b741e7cf24da7978dde251b58ddec2092d9f6a04f3623eb4e9a15", size = 513048232, upload-time = "2026-07-16T09:45:07.751Z" },
@@ -1497,7 +1902,7 @@ name = "nvidia-cudnn-cu13"
 version = "9.26.0.51"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-cublas" },
+    { name = "nvidia-cublas", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c5/1c/01e1dd3dec6ffe0baaff7e722b8946d867353d05a01301f128f1730fde0b/nvidia_cudnn_cu13-9.26.0.51-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:8e5b4f5eccff721416f70ecf4353172fc4d5cdd8ca869fe6f983a4a5b0147b20", size = 595329497, upload-time = "2026-09-10T16:45:39.945Z" },
@@ -1509,7 +1914,7 @@ name = "nvidia-cufft"
 version = "12.2.0.57"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-nvjitlink" },
+    { name = "nvidia-nvjitlink", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/07/8d/f650e6d527f9d22b5ded906c000eaebb037721c06d4ecd906df62f300979/nvidia_cufft-12.2.0.57-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:1ed438568ae1088ba2c25789d10205d4104b8b140b7bd942e39a787947a0fb74", size = 218244742, upload-time = "2026-07-16T09:47:08.76Z" },
@@ -1530,9 +1935,9 @@ name = "nvidia-cusolver"
 version = "12.2.0.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-cublas" },
-    { name = "nvidia-cusparse" },
-    { name = "nvidia-nvjitlink" },
+    { name = "nvidia-cublas", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "nvidia-cusparse", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "nvidia-nvjitlink", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/60/df/9e6b603f1d64040ce3e076e9bce1b78e2d588d0aabc9783f351cecd861ab/nvidia_cusolver-12.2.0.11-py3-none-manylinux_2_27_aarch64.whl", hash = "sha256:8be097fca28de6be0990ab216ee9b804dd51077e1d1d83acf6c9850650bdc64d", size = 250383075, upload-time = "2026-07-16T09:50:16.355Z" },
@@ -1544,7 +1949,7 @@ name = "nvidia-cusparse"
 version = "12.7.10.12"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-nvjitlink" },
+    { name = "nvidia-nvjitlink", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/60/35/abbd278fb6d039fcfb5175efa10a21007a11878bec59920d84854b47d766/nvidia_cusparse-12.7.10.12-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:597eff2cd83e3ab1d1e3a0dce9c9c879d77cf64ec2659bfdb5af6a5d02e7aaa9", size = 169043093, upload-time = "2026-07-16T09:51:37.058Z" },
@@ -1591,7 +1996,7 @@ name = "nvidia-nvshmem-cu13"
 version = "3.7.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "nvidia-cuda-cccl" },
+    { name = "nvidia-cuda-cccl", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/81/11/1767ef120299972822a43aceffbc81ac813aad2089d817e36e4e12aa4c9c/nvidia_nvshmem_cu13-3.7.2-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:0e748308b9e0a8a8d81859353f3e6c98fbe85a85f652a915a2ba60149a0bd124", size = 135174619, upload-time = "2026-07-17T19:24:15.404Z" },
@@ -1766,7 +2171,7 @@ name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "ptyprocess" },
+    { name = "ptyprocess", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/42/92/cc564bf6381ff43ce1f4d06852fc19a2f11d180f23dc32d9588bee2f149d/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f", size = 166450, upload-time = "2023-11-25T09:07:26.339Z" }
 wheels = [
@@ -1812,6 +2217,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/79/4f/428f6d959818d7425a94c190a6b26fbc58035cbef40bf249be0b62a9aedd/plotly-5.24.1.tar.gz", hash = "sha256:dbc8ac8339d248a4bcc36e08a5659bacfe1b079390b8953533f4eb22169b4bae", size = 9479398, upload-time = "2024-09-12T15:36:31.068Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e5/ae/580600f441f6fc05218bd6c9d5794f4aef072a7d9093b291f1c50a9db8bc/plotly-5.24.1-py3-none-any.whl", hash = "sha256:f67073a1e637eb0dc3e46324d9d51e2fe76e9727c892dde64ddf1e1b51f29089", size = 19054220, upload-time = "2024-09-12T15:36:24.08Z" },
+]
+
+[[package]]
+name = "pluggy"
+version = "1.7.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/bf/db/7fc19e6f2dc92a966727031389fc2e08b558f0f25eb7403c1119ad4713cd/pluggy-1.7.0.tar.gz", hash = "sha256:d1eaa46ebb595891b860ab086b4d09c8588af65ebd4361b8e8f4bb8920b90ba8", size = 123304, upload-time = "2026-10-15T09:50:58.343Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/9e/2b38731e0fc536806f16490e1a12d7f0dc2a1235aa8cc07bcc75416a7daa/pluggy-1.7.0-py3-none-any.whl", hash = "sha256:7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec", size = 27082, upload-time = "2026-10-15T09:50:56.808Z" },
 ]
 
 [[package]]
@@ -2140,6 +2554,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pyreadline3"
+version = "3.5.6"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/b6/6d/f94028646d7bbe6d9d873c47ee7c246f2d29129d253f0d96cb6fcab70733/pyreadline3-3.5.6.tar.gz", hash = "sha256:61e53218b99656091ddb077df9e71f25850e72e030b6183b39c9b7e6e4f4a9bf", size = 100368, upload-time = "2026-05-14T17:55:04.471Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f7/5e/35c856e186b74678c24927847ad9895a51f1bc02a0c6126477a6c6040064/pyreadline3-3.5.6-py3-none-any.whl", hash = "sha256:8449b734232e42a5dcd74048e39b60db2839a4c38cf3ae2bf7707d58b5389c0d", size = 85243, upload-time = "2026-05-14T17:55:03.262Z" },
+]
+
+[[package]]
 name = "pysplashsurf"
 version = "0.14.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2160,6 +2583,61 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/b2/71/50fa4018144c9a14d94075f71c677d5b6c8e7dcc5ce27ab114dbfb2130ab/pysplashsurf-0.14.1.0-cp310-abi3-win32.whl", hash = "sha256:5adcd387f77f80bef2e3fe05e176ba83e950e7ec524f5c3ad4a9d0764de4c80c", size = 2460405, upload-time = "2026-03-21T20:18:58.75Z" },
     { url = "https://files.pythonhosted.org/packages/d2/0b/dc9b881ae0c970601ad71c04b4e9ac311388c572aca51c596b33ea916c6c/pysplashsurf-0.14.1.0-cp310-abi3-win_amd64.whl", hash = "sha256:d0cb601a46c2df54d7e8a4b31ac840e67bbc123d52dfe3e2bc2506314139f910", size = 2837768, upload-time = "2026-03-21T20:18:59.824Z" },
     { url = "https://files.pythonhosted.org/packages/f6/cf/8a6da08522f6f7f0c8d1ddd8282b450f0e83b25ac129ef54873373092bf2/pysplashsurf-0.14.1.0-cp310-abi3-win_arm64.whl", hash = "sha256:060f5f1e91b226ec50fe8271df0e8db2f4351b3db8349b798aa41d74d8873905", size = 2617115, upload-time = "2026-03-21T20:19:00.992Z" },
+]
+
+[[package]]
+name = "pytest"
+version = "9.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+    { name = "iniconfig" },
+    { name = "packaging" },
+    { name = "pluggy" },
+    { name = "pygments" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/79/42/bb4641652e58dedeac2ec51abc1f8cae4fee4ec63899a0999016229a0f2a/pytest-9.2.0.tar.gz", hash = "sha256:97c4f3b1f3c7414aa36465e09b8220f1d03627993bd51b1282e193753c80557b", size = 1797555, upload-time = "2026-10-27T21:30:20.728Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/51/39/1f5d8c8877a0fa327db959c19341d4be61660de1ab6b7391f9eb805bcd67/pytest-9.2.0-py3-none-any.whl", hash = "sha256:07acdcf88ec174f907dc01af70bf52d49b014bbab03faeeade31c96b18c2e588", size = 411776, upload-time = "2026-10-27T21:30:19.131Z" },
+]
+
+[[package]]
+name = "pytest-cov"
+version = "7.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "coverage" },
+    { name = "pluggy" },
+    { name = "pytest" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b1/51/a849f96e117386044471c8ec2bd6cfebacda285da9525c9106aeb28da671/pytest_cov-7.1.0.tar.gz", hash = "sha256:30674f2b5f6351aa09702a9c8c364f6a01c27aae0c1366ae8016160d1efc56b2", size = 55592, upload-time = "2026-03-21T20:11:16.284Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9d/7a/d968e294073affff457b041c2be9868a40c1c71f4a35fcc1e45e5493067b/pytest_cov-7.1.0-py3-none-any.whl", hash = "sha256:a0461110b7865f9a271aa1b51e516c9a95de9d696734a2f71e3e78f46e1d4678", size = 22876, upload-time = "2026-03-21T20:11:14.438Z" },
+]
+
+[[package]]
+name = "pytest-repeat"
+version = "0.9.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytest" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/80/d4/69e9dbb9b8266df0b157c72be32083403c412990af15c7c15f7a3fd1b142/pytest_repeat-0.9.4.tar.gz", hash = "sha256:d92ac14dfaa6ffcfe6917e5d16f0c9bc82380c135b03c2a5f412d2637f224485", size = 6488, upload-time = "2025-04-07T14:59:53.077Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/73/d4/8b706b81b07b43081bd68a2c0359fe895b74bf664b20aca8005d2bb3be71/pytest_repeat-0.9.4-py3-none-any.whl", hash = "sha256:c1738b4e412a6f3b3b9e0b8b29fcd7a423e50f87381ad9307ef6f5a8601139f3", size = 4180, upload-time = "2025-04-07T14:59:51.492Z" },
+]
+
+[[package]]
+name = "pytest-rerunfailures"
+version = "16.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+    { name = "pytest" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d1/b0/6b5337f9d59b26b0069ea3d5e863c31dc04b69e51bbfb1cf2ea6328fba87/pytest_rerunfailures-16.7.tar.gz", hash = "sha256:6956ddfb65ca1d07e7e3d99e2c5359d82300f4cb062e6049563bd2c106f72d5c", size = 59666, upload-time = "2026-09-17T07:08:48.871Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/d3/07ea35102cf2020ddaaac368d2a6f0bcc63d6523fb8918805bac3eb8b98f/pytest_rerunfailures-16.7-py3-none-any.whl", hash = "sha256:edf1886209c2b7dafe35b5bf1708d6ec40ccf6c6b357f0f02807efcec0204c99", size = 23952, upload-time = "2026-09-17T07:08:47.635Z" },
 ]
 
 [[package]]
@@ -2191,6 +2669,16 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/62/21/9daf8da2793d112a04b46ac33ab9046c91b0af8292cd93b3cfdd07ff7169/pyvers-0.2.3.tar.gz", hash = "sha256:c4b81c3a033963245e124cdecb052783c9c4cea3bb08c051833af1c44faa6283", size = 12347, upload-time = "2026-07-09T13:58:07.046Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/2d/8d/63787e8feda59d981ebc953b6581ccab3c97cf7bfe0a6a407c07b50fc86c/pyvers-0.2.3-py3-none-any.whl", hash = "sha256:6f5b5612f2f4bd08caa49baa70fc5f875fc7da701a5385c13e244eea6b8114dd", size = 11757, upload-time = "2026-07-09T13:58:06.078Z" },
+]
+
+[[package]]
+name = "pywin32"
+version = "312"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/ff/32aa7d2ed0ab12b323aaa64f9b75e6ad4f8fd09f9ccfc28c79414d46838d/pywin32-312-cp312-cp312-win32.whl", hash = "sha256:dab4f65ac9c4e48400a2a0530c46c3c579cd5905ecd11b80692373915269208b", size = 6371877, upload-time = "2026-06-04T07:49:28.836Z" },
+    { url = "https://files.pythonhosted.org/packages/03/d9/77040d3b43df3f3be32ea289433d660d2727f5ba327bc73be835127d9d60/pywin32-312-cp312-cp312-win_amd64.whl", hash = "sha256:b457f6d628a47e8a7346ce22acb7e1a46a4a78b52e1d17e1af56871bd19a93bc", size = 6914841, upload-time = "2026-06-04T07:49:31.85Z" },
+    { url = "https://files.pythonhosted.org/packages/e3/cc/7b1ec671775756020a0ee7f4feeaf3c568f0ab86bd3900088cf986937a92/pywin32-312-cp312-cp312-win_arm64.whl", hash = "sha256:6017c58e12f6809fbb0555b75df144c2922a9ffd18e4b9b5afa863b6c1a9d950", size = 6727901, upload-time = "2026-06-04T07:49:34.244Z" },
 ]
 
 [[package]]
@@ -2311,12 +2799,24 @@ dependencies = [
     { name = "lark" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "colcon-common-extensions" },
+    { name = "colcon-mixin" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "catkin-pkg", specifier = ">=1.1.1" },
     { name = "empy", specifier = "==3.3.4" },
     { name = "hand-rl", git = "https://github.com/rice-robotics-club/hand-rl" },
     { name = "lark", specifier = ">=1.3.1" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "colcon-common-extensions", specifier = ">=0.3.0" },
+    { name = "colcon-mixin", specifier = ">=0.3.2" },
 ]
 
 [[package]]
@@ -2456,11 +2956,11 @@ wheels = [
 
 [[package]]
 name = "setuptools"
-version = "84.2.1"
+version = "79.0.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/70/b3/c19426f783614d625699a4b247faf628ea9ab1db228674491767b417f9e1/setuptools-84.2.1.tar.gz", hash = "sha256:3ff8b3b5492a0aa66960f4419365a86b84e013070d4313e4d4a6894f5d64d6bc", size = 1230289, upload-time = "2026-10-20T19:01:37.742Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/bb/71/b6365e6325b3290e14957b2c3a804a529968c77a049b2ed40c095f749707/setuptools-79.0.1.tar.gz", hash = "sha256:128ce7b8f33c3079fd1b067ecbb4051a66e8526e7b65f6cec075dfc650ddfa88", size = 1367909, upload-time = "2025-04-23T22:20:59.241Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ef/55/6dc6d6bb953bdfc52519a0059592c52b6e3b8ad51cf8256dffceb55b0610/setuptools-84.2.1-py3-none-any.whl", hash = "sha256:ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2", size = 876263, upload-time = "2026-10-20T19:01:35.678Z" },
+    { url = "https://files.pythonhosted.org/packages/0d/6d/b4752b044bf94cb802d88a888dc7d288baaf77d7910b7dedda74b5ceea0c/setuptools-79.0.1-py3-none-any.whl", hash = "sha256:e147c0549f27767ba362f9da434eab9c5dc0045d5304feb602a0af001089fc51", size = 1256281, upload-time = "2025-04-23T22:20:56.768Z" },
 ]
 
 [[package]]

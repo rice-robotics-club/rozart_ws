@@ -1,3 +1,6 @@
 [submodule "src/rozart_description"]
 	path = src/rozart_description
 	url = https://github.com/rice-robotics-club/rozart_description.git
+[submodule "src/external/onnxruntime_controller"]
+	path = src/external/onnxruntime_controller
+	url = https://github.com/lopatoj/onnxruntime_controller
