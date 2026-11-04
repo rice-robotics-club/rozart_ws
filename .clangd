@@ -1,3 +1,2 @@
 CompileFlags:
-  Add:
-    - --compile-commands-dir=build
+  CompilationDatabase: build
