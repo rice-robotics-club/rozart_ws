@@ -1,10 +1,10 @@
 import torch
+from rozart_residual.residual import BASE_ACTION_KEY, ResidualEnv, ResidualPolicy
+from rsl_rl.env import VecEnv
 from tensordict import TensorDict
 
-from rozart_residual.residual import BASE_ACTION_KEY, ResidualEnv, ResidualPolicy
 
-
-class EchoEnv:
+class EchoEnv(VecEnv):
     """Observes the last action it was given."""
 
     num_envs = 2
@@ -42,7 +42,9 @@ def test_zero_residual_reproduces_base():
 
 
 def test_residual_is_scaled_and_clamped():
-    env = ResidualEnv(EchoEnv(), Constant(0.5), ["last"], residual_scale=0.1, action_limit=0.55)
+    env = ResidualEnv(
+        EchoEnv(), Constant(0.5), ["last"], residual_scale=0.1, action_limit=0.55
+    )
     obs, *_ = env.step(torch.ones(2, 3))
     assert torch.allclose(obs["last"], torch.full((2, 3), 0.55))
     obs, *_ = env.step(-torch.ones(2, 3))
